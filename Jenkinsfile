@@ -1,9 +1,11 @@
 pipeline { agent any
 
     stages { 
-        stage('Example') {
+         stage('First Stage') {
             steps {
+                bat 'echo Hello Jenkins'
                 bat 'whoami'
+                bat 'dir'
             }
         }
         stage('Checkout') { steps { checkout scm } }
