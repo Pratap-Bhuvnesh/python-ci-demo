@@ -3,7 +3,7 @@ pipeline { agent any
     stages { 
         stage('Example') {
             steps {
-                bat 'echo Hello'
+                bat 'whoami'
             }
         }
         stage('Checkout') { steps { checkout scm } }
